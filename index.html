@@ -50,13 +50,14 @@
 		/* STEP 4b: Remove the node */
 		section.removeChild(linkParagraph);
 		/* STEP 4c: Strangely, a node cannot remove itself, it has to have its parent remove its child - comment out the above and have linkParagraph remove itself - sort of… */
-
+		// linkParagraph.parentNode.removeChild(linkParagraph);
 
 		/* STEP 5: Manipulating Document Styles
 		There are a number of ways of changing the visual styles of the document object */
 
 		/* STEP 5a: Directly add inline CSS with the style attribute (set the value of various style properties) */
-
+		paragraph.style.color = 'white';
+		paragraph.style.backgroundColor = 'black';
 
 		/* STEP 5b: View the revised page in the browser and observe the revised style attribute in the affected paragraph */
 
