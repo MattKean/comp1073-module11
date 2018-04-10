@@ -56,11 +56,11 @@
 		There are a number of ways of changing the visual styles of the document object */
 
 		/* STEP 5a: Directly add inline CSS with the style attribute (set the value of various style properties) */
-		paragraph.style.color = 'white';
-		paragraph.style.backgroundColor = 'black';
+		// paragraph.style.color = 'white';
+		// paragraph.style.backgroundColor = 'black';
 
 		/* STEP 5b: View the revised page in the browser and observe the revised style attribute in the affected paragraph */
-
+		paragraph.setAttribute('class', 'highlight');
 		/* STEP 5c: More commonly, JavaScript is used to add/remove classes to element nodes that reference embedded or external CSS - comment out the above style properties and build the equivalent inside the attached CSS file, styles.css */
 
 		/* STEP 5d: Add the class 'highlight' to the paragraph */
